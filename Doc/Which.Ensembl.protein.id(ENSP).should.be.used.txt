@@ -1,0 +1,20 @@
+Actually you need not go to any other site than string-db for obtaining the ENSP to 
+Gene symbol mappings. Here's what you should do:
+
+1. On the string download page, select the organism for which you want to download 
+   the data and then look at the "General flatfiles & full database dumps" section. 
+   You will see a "protein aliases" file link in the list, download that file.
+2. Download that file. It contains species id, protein id (ENSP), alias (gene symbol 
+   is found in this column) and source. In the source column, use sources like 
+   BLAST_UniProt_GN, Ensembl_UniProt_GN or any source that you want to add in this 
+   to obtain the lines that only map the ENSP to the gene symbols, since there are 
+   many more identifier mappings in this file. Note that for each gene symbol, 
+   there would be multiple transcripts (ENSPs) , hence multiple rows.
+3. Once you get the curated mapping list, use the string "protein links" file to 
+   obtain the network interaction data and simply replace the protein identifiers in 
+   that file with their mapped gene symbols. Now you have the string data in terms 
+   of gene symbols.
+4. Create a network using your list of gene symbols.
+
+Note: It seems that the string-db files are being updated to v10 currently. If the 
+file is not available right now, do check after some time to get the updated data.
