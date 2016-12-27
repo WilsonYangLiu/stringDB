@@ -53,6 +53,7 @@ if($3>=900){
 ' | sort | uniq | wc -l
 # Output: 11132
 
+# Skip the following steps
 # count the number of the unique ensemble gene id
 wc -l gencode.v22.annotation.used4FPKM.csv
 # Output 60484 (plus header)
