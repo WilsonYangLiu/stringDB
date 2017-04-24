@@ -90,9 +90,9 @@ ENV/
 .ropeproject
 
 # my
-/Association.Data
-/filter.Find.Sym.In.ProtAlias
-/filter.old
-/Full.Data
-/Interaction.Data
+/0.bak
+/1.Interaction.Data
+/2.Association.Data
+/3.Full.Data
+
 
